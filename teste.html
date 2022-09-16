@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<head>
+	<title>ANATA | Oficial</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Fazendo tecnologias">
+	<meta name="keywords" content="Taxistas de Angola, Associação, ANATA">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Mind Vision">
+	 <link rel="icon" href="img/img3.png" type="image/gif" />
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/sobre.css">
+	<link rel="stylesheet" type="text/css" href="css/aniversariantes.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome\css\font-awesome.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<h2>Cadastro do Táxista</h2>
+<p>Presta devida atenção ao registar informação sobre o táxista.</p>
+
+<ul class="nav nav-tabs">
+	<li class="active"><a data-toggle="tab" href="#home" id="btn-home">Informações Pessoais</a>
+</li>
+<li>&nbsp;&nbsp;</li>
+<li>|</li>
+<li>&nbsp;&nbsp;</li>
+
+<li><a data-toggle="tab" href="#menu1" id="btn-menu1">Informações</a></li>
+<li>&nbsp;&nbsp;</li>
+<li>|</li>
+<li>&nbsp;&nbsp;</li>
+
+<li><a data-toggle="tab" href="#menu2" id="btn-menu2">Identi­ficação da viatura e o Proprietario</a></li>
+<li>&nbsp;&nbsp;</li>
+<li>|</li>
+<li>&nbsp;&nbsp;</li>
+
+<li><a data-toggle="tab" href="#menu3" id="btn-menu3">Outros­</a></li>
+<li>&nbsp;&nbsp;</li>
+<li>|</li>
+<li>&nbsp;&nbsp;</li>
+</ul>
+
+<div class="tab-content">
+	<div id="home" style="display: block">
+		<div class="row" id="home"> 
+            <div class="row"  style="margin-left: 5px;margin-right: 10px;"> 
+                            <div class="col-8">
+                                <label for="nome" class="label mr-1">Nome*</label>
+                                <input name="nome" class="form-control" required="" id="nome">
+                            </div>
+                            <div class="col-4">
+                                <label for="nDependente">Nº de filhos</label>
+                                <select class="form-control" name="nDependente" id="nDependente">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row"  style="margin-left: 5px;margin-right: 10px;"> 
+                            <div class="col-4">
+                                <label for="sector" class="label mr-1">Filiação (Pai)* </label>
+                                <input name="pai" class="form-control" required="" id="pai">
+                            </div>
+                            <div class="col-4">
+                                <label class="label mr-1" for="mae"> e de (Mãe)*</label>
+                                <input name="mae" class="form-control" required="" id="mae"> 
+                            </div>
+                            <div class="col-4">
+                                <label for="estadocivil">Estado Civil</label>
+                                <select class="form-control" name="estadocivil" id="estadocivil">
+                                    <option value="1">Casado(a)</option>
+                                    <option value="2">Solteiro(a)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row"  style="margin-left: 5px;margin-right: 10px;">
+                            <div class="col-4">
+                                <label class="label mr-1" for="naturalidade">Naturalidade*</label>
+                                <input name="naturalidade" class="form-control" id="naturalidade">
+                            </div>
+
+                            <div class="col-4">
+                                <label class="label mr-1" for="dataNasc">Data de Nascimento*</label>
+                                <input name="dataNasc" type="date" class="form-control" id="dataNasc">
+                            </div>
+                            
+                            <div class="col-4">
+                                <label for="nBi" class="label mr-1">Nº do B.I./Cédula/Passaporte*</label>
+                                <input name="nBi" class="form-control" id="nBi">
+                            </div>                                
+                        </div>
+                        
+                        <div class="row"  style="margin-left: 5px;margin-right: 10px;">
+                            <div class="col-4">
+                                <label class="label mr-1" for="provincia">Província</label>
+                                <select class="form-control" name="provincia" id="provincia" required="">
+                                    <?php echo $options_provincia;?>
+                                </select>
+                            </div>
+
+                            <div class="col-4">
+                                <label class="label mr-1" for="municipio">Município</label>
+                                <select class="form-control" name="municipio" id="municipio" disabled="">
+                                    <option>Seleccione a província primeiro</option>
+                                <select> 
+                            </div>
+                            <div class="col-4">
+                                <label class="label mr-1" for="distrito">Distrito / Comuna</label>
+                                <select class="form-control" name="distrito" id="distrito" disabled="" required="">
+                                        <option>Seleccione o município primeiro</option>
+                                <select>
+                            </div>
+                        </div>
+
+                        <div class="row"  style="margin-left: 5px;margin-right: 10px;">
+                            <div class="col-4">
+                                <label class="label mr-1" for="bairro">Bairro</label>
+                                <input name="bairro" class="form-control" id="bairro">
+                            </div>
+
+                            <div class="col-4">
+                                <label class="label mr-1" for="rua">Rua</label>
+                                <input name="rua" class="form-control" id="rua">
+                            </div>
+
+                            <div class="col-4">
+                                <label class="label mr-1" for="endereco">Residência</label>
+                                <input name="endereco" class="form-control" id="endereco">
+                            </div>
+                        </div>
+
+                        <div class="row"  style="margin-left: 5px;margin-right: 10px;">
+                            <div class="col-4">
+                                <label for="habilitacoes" class="label mr-1">Habilitações*</label>
+                                <select class="form-control" name="habilitacoes" id="habilitacoes">
+                                    <option value="1">Ensino base</option>
+                                    <option value="2">Ensino secundário</option>
+                                    <option value="3">Bacharel</option>
+                                    <option value="4">Licenciado</option>
+                                    <option value="5">Mestre</option>
+                                    <option value="6">PhD / Doctorado</option>
+                                </select>
+                            </div>
+
+                            <div class="col-4">
+                                <label for="contacto" class="label mr-1">Contacto</label>
+                                <input name="contacto" class="form-control" id="contacto">
+                            </div>
+
+                            <div class="col-4">
+                                <label for="email" class="label mr-1">Email</label>
+                                <input name="email" class="form-control" id="email">
+                            </div>
+                        </div>
+        </div>
+	</div>
+
+	<div id="menu1" class="" style="display: none">
+		<h3>Menu 1</h3>
+		<div class="row"  style="margin-left: 5px;margin-right: 10px;">
+                            <div class="col-4">
+                                <label for="matricula" class="label mr-1">Matricula</label>
+                                <input name="matricula" type="text" class="form-control" id="matricula">
+                            </div>
+
+                            <div class="col-4">
+                                <label for="data_venc_seguro" class="label mr-1">Data de vencimento da seguro</label>
+                                <input name="data_venc_seguro" type="date" class="form-control" id="data_venc_seguro">
+                            </div>
+
+                            <div class="col-4">
+                                <label for="data_venc_licenca" class="label mr-1">Data de vencimento do licença</label>
+                                <input name="data_venc_licenca" type="date" class="form-control" id="data_venc_licenca">
+                            </div> 
+                         </div>
+	</div>
+
+	<div id="menu2" class="tab-pane" style="display: none">
+		<h3>Menu 2</h3>
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+	</div>
+
+	<div id="menu3" class="" style="display: none">
+		<h3>Menu 3</h3>
+		<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+	</div>
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-2.2.3.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#btn-home').on('click', function(){
+			 document.getElementById('home').style.display='block';
+			 document.getElementById('menu1').style.display='none';
+			 document.getElementById('menu2').style.display='none';
+			 document.getElementById('menu3').style.display='none';
+		});
+
+		$('#btn-menu1').on('click', function(){
+			 document.getElementById('home').style.display='none';
+			 document.getElementById('menu1').style.display='block';
+			 document.getElementById('menu2').style.display='none';
+			 document.getElementById('menu3').style.display='none';
+		});
+
+		$('#btn-menu2').on('click', function(){
+			 document.getElementById('home').style.display='none';
+			 document.getElementById('menu1').style.display='none';
+			 document.getElementById('menu2').style.display='block';
+			 document.getElementById('menu3').style.display='none';
+		});
+
+		$('#btn-menu3').on('click', function(){
+			 document.getElementById('home').style.display='none';
+			 document.getElementById('menu1').style.display='none';
+			 document.getElementById('menu2').style.display='none';
+			 document.getElementById('menu3').style.display='block';
+		});
+	});
+	
+</script>

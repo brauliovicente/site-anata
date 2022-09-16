@@ -1,0 +1,48 @@
+
+.icon{
+	color:#fff;
+	font-family: 'typeecon';
+	font-weight: bolder;
+	padding-left: 20px;
+	font-size: 1.5em;
+}
+
+.icon-a{
+	font-family: 'typeecon';
+	font-weight: bolder;
+}
+
+.txt-title{
+	font-weight: bolder;
+	letter-spacing: 10px;
+}
+
+#text-contacto{
+	color: #fff;
+}
+
+#icon-itens a:hover{
+	text-decoration: none;
+}
+
+#menu-footer ul{
+	list-style: none;
+}
+
+#menu-footer ul li span{
+	color:#000;
+	font-weight: bolder;
+}
+
+#menu-footer ul li a:hover{
+	text-decoration: none;
+}
+
+#menu-footer ul .li-image{
+	display: inline;
+}
+
+#empresa{
+	font-weight: bolder;
+}
+

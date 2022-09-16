@@ -1,0 +1,50 @@
+/*Navbar*/
+.navbar-dark  .navbar-collapse  .navbar-nav 
+.nav-item  .nav-link  .span-info{padding-left: 20px; color:#fff;}
+
+.navbar-dark  .navbar-collapse  .navbar-nav
+.active .nav-link .span-info, .navbar-dark  .navbar-collapse  .navbar-nav
+.nav-item  .nav-link .span-info:hover{color:#200769;}
+
+
+.navbar{
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	background-color: transparent;
+	padding: 20px 0;
+}
+
+/*Banner*/
+.conteudo-cabecalho{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	max-width: 100%;
+}
+
+.conteudo-cabecalho h5{
+	font-size: 3em;
+	font-weight: 300;
+	color:#fff;
+	font-family: monospace;
+}
+
+.conteudo-cabecalho h1{
+	font-size: 5em;
+	font-weight: bolder;
+	color:#fff;
+	font-family: 'Montserrat', monospace;
+}
+
+.conteudo-cabecalho p{
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: lighter;
+	color:#ccc;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	font-family: 'Montserrat', monospace;
+}
