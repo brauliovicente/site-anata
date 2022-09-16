@@ -15,5 +15,7 @@ O projecto está em construção
 
 
 **Tecnologias utilizadas**
-O projecto está em construção
+- HTML5
+- CSS3
+- JS.
 
